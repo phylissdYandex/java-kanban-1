@@ -7,7 +7,7 @@ import tasks.Task;
 import java.util.List;
 
 public class Main {
-// Переделал код, попробовал немного другое, вообщем сделал
+// Спасибо за проверку. Исправил ошибку, остальное сделаю во время выполнения 4 спринта. Адски устал.
     public static void main(String[] args) {
         Manager manager = new Manager();
 

@@ -11,10 +11,10 @@ public class Manager {
     private static int id = 0;
 
     private final Map<Integer, Task> tasks = new HashMap<>();
-    private final HashMap<Integer, Subtask> subtasks = new HashMap<>();
-    private final HashMap<Integer, Epic> epics = new HashMap<>();
+    private final Map<Integer, Subtask> subtasks = new HashMap<>();
+    private final Map<Integer, Epic> epics = new HashMap<>();
 
-    public int generateId() {
+    private int generateId() {
         return ++id;
     }
 
@@ -162,7 +162,7 @@ public class Manager {
         }
     }
 
-    public void updateStatusEpic(Epic epic) {
+    private void updateStatusEpic(Epic epic) {
         if (epics.containsKey(epic.getId())) {
             if (epic.getSubtaskIds().size() == 0) {
                 epic.setStatus(Status.NEW);
