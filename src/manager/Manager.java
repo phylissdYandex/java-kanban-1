@@ -9,12 +9,12 @@ import java.util.*;
 
 public class Manager {
     private static int id = 0;
-
+// Спасибо за проверку.Исправил основную ошибку, остальное доделаю при работе над 4 спринтом
     private final Map<Integer, Task> tasks = new HashMap<>();
-    private final Map<Integer, Subtask> subtasks = new HashMap<>();
-    private final Map<Integer, Epic> epics = new HashMap<>();
+    private final HashMap<Integer, Subtask> subtasks = new HashMap<>();
+    private final HashMap<Integer, Epic> epics = new HashMap<>();
 
-    private int generateId() {
+    public int generateId() {
         return ++id;
     }
 
